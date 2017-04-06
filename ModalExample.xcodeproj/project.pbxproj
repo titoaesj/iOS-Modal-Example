@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9DA37B321E95A484005C9835 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA37B311E95A484005C9835 /* ItemTableViewCell.swift */; };
+		9DA37B361E95AE7E005C9835 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA37B351E95AE7E005C9835 /* ModalViewController.swift */; };
 		9DC57B0D1E94982000DE5433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC57B0C1E94982000DE5433 /* AppDelegate.swift */; };
-		9DC57B0F1E94982000DE5433 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC57B0E1E94982000DE5433 /* ModalViewController.swift */; };
+		9DC57B0F1E94982000DE5433 /* viewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC57B0E1E94982000DE5433 /* viewController.swift */; };
 		9DC57B121E94982000DE5433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC57B101E94982000DE5433 /* Main.storyboard */; };
 		9DC57B141E94982000DE5433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC57B131E94982000DE5433 /* Assets.xcassets */; };
 		9DC57B171E94982000DE5433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC57B151E94982000DE5433 /* LaunchScreen.storyboard */; };
@@ -17,9 +18,10 @@
 
 /* Begin PBXFileReference section */
 		9DA37B311E95A484005C9835 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		9DA37B351E95AE7E005C9835 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		9DC57B091E94982000DE5433 /* ModalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC57B0C1E94982000DE5433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DC57B0E1E94982000DE5433 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		9DC57B0E1E94982000DE5433 /* viewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewController.swift; sourceTree = "<group>"; };
 		9DC57B111E94982000DE5433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DC57B131E94982000DE5433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DC57B161E94982000DE5433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,9 @@
 			isa = PBXGroup;
 			children = (
 				9DA37B341E95A4A1005C9835 /* modal */,
+				9DC57B0E1E94982000DE5433 /* viewController.swift */,
+				9DA37B311E95A484005C9835 /* ItemTableViewCell.swift */,
+				9DC57B101E94982000DE5433 /* Main.storyboard */,
 				9DC57B0C1E94982000DE5433 /* AppDelegate.swift */,
 			);
 			name = ui;
@@ -49,9 +54,7 @@
 		9DA37B341E95A4A1005C9835 /* modal */ = {
 			isa = PBXGroup;
 			children = (
-				9DC57B0E1E94982000DE5433 /* ModalViewController.swift */,
-				9DA37B311E95A484005C9835 /* ItemTableViewCell.swift */,
-				9DC57B101E94982000DE5433 /* Main.storyboard */,
+				9DA37B351E95AE7E005C9835 /* ModalViewController.swift */,
 			);
 			name = modal;
 			sourceTree = "<group>";
@@ -155,7 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DC57B0F1E94982000DE5433 /* ModalViewController.swift in Sources */,
+				9DA37B361E95AE7E005C9835 /* ModalViewController.swift in Sources */,
+				9DC57B0F1E94982000DE5433 /* viewController.swift in Sources */,
 				9DA37B321E95A484005C9835 /* ItemTableViewCell.swift in Sources */,
 				9DC57B0D1E94982000DE5433 /* AppDelegate.swift in Sources */,
 			);
