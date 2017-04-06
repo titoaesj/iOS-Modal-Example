@@ -11,6 +11,9 @@ import UIKit
 class viewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var mListTableView: UITableView!
+    @IBOutlet weak var mMaskModal: UIView!
+    
+    let notificationName = Notification.Name("notification_modal_close")
     
     /*:
      Dados para popular o UITableView
@@ -24,6 +27,16 @@ class viewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         self.mListTableView.dataSource = self
         self.mListTableView.delegate = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.removeMaskModal), name: notificationName, object: nil)
+    }
+    
+    func removeMaskModal() {
+        self.mMaskModal.isHidden = true
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: notificationName, object: nil);
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,6 +52,7 @@ class viewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
+            self.mMaskModal.isHidden = false
             self.performSegue(withIdentifier: "segueToModal", sender: nil)
         case 1:
             print("chama o segundo")
